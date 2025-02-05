@@ -6,8 +6,9 @@ const Page = () => {
   return (
     <>
       <Hero />
-      <TeamSection />
+      {/* <TeamSection />
       <Example />
+       */}
     </>
   );
 };

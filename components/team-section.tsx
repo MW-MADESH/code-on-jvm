@@ -134,35 +134,33 @@ const TeamSection = () => {
   }, [teamMembers]);
 
   return (
-    <section ref={sectionRef} className="px-4 py-20">
-      <div className="container mx-auto">
-        <h2 className="section-title mb-16 text-center text-3xl font-bold sm:text-4xl">
-          Our Amazing Team
-        </h2>
+    <section ref={sectionRef} className="container py-20">
+      <h2 className="section-title mb-16 text-center text-3xl font-bold sm:text-4xl">
+        Our Amazing Team
+      </h2>
 
-        <div className="team-grid grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {teamMembers.map((member) => (
-            <div
-              key={member.id}
-              className="team-card overflow-hidden rounded-xl bg-muted"
-            >
-              <div className="member-image overflow-hidden">
-                <Image
-                  src="/images/pranav-vikraman.jpg"
-                  alt={member.name}
-                  width={400}
-                  height={400}
-                  className="h-64 w-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="mb-2 text-xl font-semibold">{member.name}</h3>
-                <p className="mb-3 font-medium text-brand">{member.role}</p>
-                <p className="text-sm">{member.description}</p>
-              </div>
+      <div className="team-grid grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-6 lg:grid-cols-4 lg:gap-8">
+        {teamMembers.map((member) => (
+          <div
+            key={member.id}
+            className="team-card overflow-hidden rounded-xl bg-muted"
+          >
+            <div className="member-image overflow-hidden">
+              <Image
+                src="/images/pranav-vikraman.jpg"
+                alt={member.name}
+                width={400}
+                height={400}
+                className="h-64 w-full object-cover"
+              />
             </div>
-          ))}
-        </div>
+            <div className="p-6">
+              <h3 className="mb-2 text-xl font-semibold">{member.name}</h3>
+              <p className="mb-3 font-medium text-brand">{member.role}</p>
+              <p className="text-sm">{member.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
