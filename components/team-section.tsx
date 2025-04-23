@@ -6,9 +6,9 @@ const teamMembers: TeamCardProps[] = [
     role: "Leader",
     image: "/images/paarthan.jpg",
     socials: {
-      instagram: "https://instagram.com/alice",
-      linkedin: "https://linkedin.com/in/alice",
-      github: "https://github.com/alice",
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/paarthan-c-b52930257/",
+      github: "",
     },
   },
   {
@@ -16,9 +16,9 @@ const teamMembers: TeamCardProps[] = [
     role: "Co Lead",
     image: "/images/madesh.jpg",
     socials: {
-      instagram: "https://instagram.com/bob",
-      linkedin: "https://linkedin.com/in/bob",
-      github: "https://github.com/bob",
+      instagram: "https://www.instagram.com/madeshwaran0_0/",
+      linkedin: "www.linkedin.com/in/madeshwaran-c",
+      github: "https://github.com/MW-MADESH",
     },
   },
   {
@@ -46,9 +46,9 @@ const teamMembers: TeamCardProps[] = [
     role: "Crew",
     image: "/images/swetha.jpg",
     socials: {
-      instagram: "https://instagram.com/ella",
-      linkedin: "https://linkedin.com/in/ella",
-      github: "https://github.com/ella",
+      instagram: "",
+      linkedin: "",
+      github: "",
     },
   },
   {
@@ -62,13 +62,13 @@ const teamMembers: TeamCardProps[] = [
     },
   },
   {
-    name: "Grace Kim",
-    role: "QA Specialist",
+    name: "Lakshita",
+    role: "Crew",
     image: "/images/lakshita.jpg",
     socials: {
-      instagram: "https://instagram.com/grace",
-      linkedin: "https://linkedin.com/in/grace",
-      github: "https://github.com/grace",
+      instagram: "",
+      linkedin: "",
+      github: "",
     },
   },
 ];
