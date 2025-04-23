@@ -54,7 +54,6 @@ const Header = () => {
                     key={index}
                     href={link.href}
                     className="font-semibold text-sm hover:text-brand transition-colors duration-200 ease-in-out"
-                    target="_blank"
                   >
                     {link.name}
                   </Link>
