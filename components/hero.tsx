@@ -37,7 +37,7 @@ const Hero = () => {
   }, [headingRef, paragraphRef, button1Ref, button2Ref]);
 
   return (
-    <section className="container relative flex flex-col items-center justify-center gap-6 overflow-hidden py-16 md:py-24 lg:gap-8 lg:py-36">
+    <section className="container relative flex flex-col items-center justify-center gap-6 overflow-hidden py-16 md:py-24 lg:gap-8 lg:py-40">
       {/* Hero Text */}
       <div className="mx-auto max-w-4xl space-y-3 px-4">
         <h1

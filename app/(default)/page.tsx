@@ -1,14 +1,14 @@
-import Example from "@/components/example";
 import Hero from "@/components/hero";
 import TeamSection from "@/components/team-section";
+import { ReactLenis } from "lenis/react";
 
 const Page = () => {
   return (
     <>
-      <Hero />
-      {/* <TeamSection />
-      <Example />
-       */}
+      <ReactLenis root>
+        <Hero />
+        <TeamSection />
+      </ReactLenis>
     </>
   );
 };

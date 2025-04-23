@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100vh;
+}
+
 @layer base {
   :root {
     --nav-height: 4rem;
@@ -78,4 +89,29 @@
   .h2 {
     @apply text-3xl font-bold;
   }
+
+  .canvas{
+    @apply absolute top-0 left-0 w-[150%] h-[150%];
+  }
+
+  .team-card{
+    @apply relative w-[10%] h-[75%] flex flex-col gap-4 p-4 max-sm:w-[25%] bg-black;
+  }
+
+  .team-section-img{
+    @apply w-full h-full object-cover;
+  }
+}
+
+
+.lenis.lenis-smooth [data-lenis-prevent]{
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped{
+  overflow: clip;
+}
+
+.lenis.lenis-smooth iframe{
+  pointer-events: none;
 }
